@@ -97,7 +97,7 @@ $(GEN_DIR)/ortools/constraint_solver/constraint_solver_java_wrap.cc: \
  -package com.google.ortools.constraintsolver \
  -module main \
  -outdir $(GEN_PATH)$Scom$Sgoogle$Sortools$Sconstraintsolver \
- $(SRC_DIR)$Sortools$Sconstraint_solver$Sjava$Srouting.i
+ $(SRC_DIR)$Sortools$Sconstraint_solver$Sjava$Sconstraint_solver.i
 	$(SED) -i -e 's/< long long >/< int64 >/g' \
  $(GEN_PATH)$Sortools$Sconstraint_solver$Sconstraint_solver_java_wrap.cc
 	$(SED) -i -e 's/< long long,long long >/< int64, int64 >/g' \
